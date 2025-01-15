@@ -75,10 +75,10 @@ Primos del mensaje: `[83, 7, 23, 5, 5]`
 Vector ordenado: `[5, 7, 23, 83]`  
 Posiciones: `[4, 2, 3, 1, 1]`
 
-La clave se genera concatenando estas posiciones, separadas por "1".
+La clave se genera concatenando estas posiciones, separadas por "1" y un "1" al inicio.
 
 **Resultado**:  
-Clave: `513141212`
+Clave: `1513141212`
 
 ---
 
