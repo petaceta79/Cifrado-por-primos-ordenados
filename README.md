@@ -139,5 +139,12 @@ Mensaje original: `"holaa"`
 
 ### 4. Código Final
 
-Finalmente, para evitar el overflow, hay una función para encriptar y desencriptar, dividiéndolos en bloques del tamaño indicado (por defecto 4 letras). El resultado es un código con la forma de:
+Finalmente, para evitar el overflow, hay una función para encriptar y desencriptar, dividiéndolos en bloques del tamaño indicado (por defecto 4 letras). El resultado es un código con la forma de código1_codigo2_-key1_key2_ y así sucesivamente.
+De esta forma, puedes encriptar y desencriptar con una función que requiere el vector con las tuplas de las letras, el tamaño de los sub-bloques y el propio mensaje/código.
+
+**Ejemplo**:
+
+El texto `"hola que tal"`, encriptado queda así: 66815_17466_8510_-15131412_12151413_12151314_
+
+
 
