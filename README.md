@@ -303,3 +303,4 @@ Desencripta un mensaje proporcionando:
 Devuelve el mensaje original en texto claro.
 
 ## Objetivo
+El objetivo de este cifrado es que cada parte posea la **clave de desencriptación del otro** y su **valor modular**, de modo que puedan comunicarse de forma segura, incluso si el mensaje es interceptado durante la transmisión.
