@@ -174,7 +174,7 @@ Se selecciona aleatoriamente un número en `[1, m-1]` que cumpla `gcd(c₁, m) =
 
 Se usa el algoritmo de **Euclides Extendido** para resolver la ecuación:
 
-'''
+''' python
 c₁ · c₂ ≡ 1 mod m
 '''
 
