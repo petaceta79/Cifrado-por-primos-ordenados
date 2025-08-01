@@ -174,9 +174,9 @@ Se selecciona aleatoriamente un número en `[1, m-1]` que cumpla `gcd(c₁, m) =
 
 Se usa el algoritmo de **Euclides Extendido** para resolver la ecuación:
 
-''' python
+```
 c₁ · c₂ ≡ 1 mod m
-'''
+```
 
 El resultado `c₂` permite descifrar el mensaje cifrado.
 
@@ -186,9 +186,9 @@ El resultado `c₂` permite descifrar el mensaje cifrado.
 
 Para cifrar un mensaje (que debe ser un número entero), se usa la fórmula:
 
-'''
+```
 mensaje_cifrado = (mensaje × c₁) mod m
-'''
+```
 
 ---
 
@@ -196,9 +196,9 @@ mensaje_cifrado = (mensaje × c₁) mod m
 
 Para recuperar el mensaje original, se utiliza:
 
-'''
+```
 mensaje_descifrado = (mensaje_cifrado × c₂) mod m
-'''
+```
 
 Dado que `c₂` es el inverso modular de `c₁`, esta operación revierte el cifrado.
 
@@ -216,16 +216,16 @@ Supongamos que:
 
 #### Cifrado:
 
-'''
+```
 mensaje_cifrado = (12345 × 78965432) mod 179265841
 = 146372913
-'''
+```
 
 #### Descifrado:
 
-'''
+```
 mensaje_descifrado = (146372913 × 10438745) mod 179265841
 = 12345
-'''
+```
 
 
