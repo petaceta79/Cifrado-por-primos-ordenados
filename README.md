@@ -5,7 +5,7 @@
 - [Cifrado de Mensajes con Números Primos y Coordenadas](#cifrado-de-mensajes-con-números-primos-y-coordenadas-fragmentos-cortos)
 - [Cifrado con Números Coprimos e Inverso Modular](#cifrado-con-números-coprimos-e-inverso-modular-criptografía-básica)
 - [Fusión de los Dos Métodos](#fusión-de-los-dos-métodos)
-- [Conclusión](#conclusión)
+- [Codigo final](#codigo-final)
 
 ## Cifrado de Mensajes con Números Primos y Coordenadas (Fragmentos Cortos)
 
@@ -264,7 +264,7 @@ el sol se esconde tras las montaas doradas la brisa suave lleva cantos de aves y
 **Clave:** 21749509  
 **Valor modular:** 222477603
 
-## Conclusión
+## Codigo final
 
 Con los tres archivos puedes compilar `Encriptacion_final.cc`, y al ejecutarlo podrás cifrar y descifrar mensajes con este método.
 
