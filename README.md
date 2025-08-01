@@ -43,7 +43,7 @@ Cada letra y el espacio en blanco se asocian con un número primo, basado en su 
 | k        | 101          |
 | w        | 103          |
 
-**Estos son los caracteres permitidos para el cifrado.**
+**Estos son los caracteres permitidos para el cifrado (variable).**
 
 ---
 
