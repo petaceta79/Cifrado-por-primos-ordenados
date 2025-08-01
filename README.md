@@ -6,6 +6,7 @@
 - [Cifrado con Números Coprimos e Inverso Modular](#cifrado-con-números-coprimos-e-inverso-modular-criptografía-básica)
 - [Fusión de los Dos Métodos](#fusión-de-los-dos-métodos)
 - [Codigo final](#codigo-final)
+- [Objetivo](#objetivo)
 
 ## Cifrado de Mensajes con Números Primos y Coordenadas (Fragmentos Cortos)
 
@@ -301,3 +302,4 @@ Desencripta un mensaje proporcionando:
 - El **valor modular**  
 Devuelve el mensaje original en texto claro.
 
+## Objetivo
