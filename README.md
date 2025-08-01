@@ -233,3 +233,5 @@ mensaje_descifrado = (146372913 × 10438745) mod 179265841
 ```
 
 ## Fusión de los Dos Métodos
+
+El objetivo es mejorar la seguridad aplicando el cifrado por congruencias a la clave más vulnerable del primer cifrado, dificultando aún más la comprensión ajena del mismo y el cálculo de la solución.
