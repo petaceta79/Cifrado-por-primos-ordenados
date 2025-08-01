@@ -146,5 +146,86 @@ De esta forma, puedes encriptar y desencriptar con una función que requiere el 
 
 El texto `"hola que tal"`, encriptado queda así: 66815_17466_8510_-15131412_12151413_12151314_
 
+## Cifrado de numero con congruencias 
+
+## Cifrado con Números Coprimos e Inverso Modular (Criptografía Básica)
+
+Este sistema de cifrado se basa en propiedades de la aritmética modular, especialmente en el uso de **números coprimos** e **inversos modulares**. Es simple pero ilustrativo de algunos fundamentos de la criptografía moderna.
+
+---
+
+### 1. Generación de Claves
+
+Para cifrar y descifrar, se necesitan tres valores:
+
+- `m`: el **módulo**, un número aleatorio dentro de un rango definido.
+- `c₁`: la **clave de cifrado**, un número coprimo con `m`.
+- `c₂`: la **clave de descifrado**, es el **inverso modular** de `c₁` módulo `m`.
+
+#### a. Selección del Módulo `m`
+
+Se genera aleatoriamente un número grande dentro de un rango definido, por ejemplo, entre 99,999,999 y 999,999,999.
+
+#### b. Generación de `c₁`: un número coprimo con `m`
+
+Se selecciona aleatoriamente un número en `[1, m-1]` que cumpla `gcd(c₁, m) = 1`.
+
+#### c. Cálculo de `c₂`: el inverso modular
+
+Se usa el algoritmo de **Euclides Extendido** para resolver la ecuación:
+
+'''
+c₁ · c₂ ≡ 1 mod m
+'''
+
+El resultado `c₂` permite descifrar el mensaje cifrado.
+
+---
+
+### 2. Cifrado del Mensaje
+
+Para cifrar un mensaje (que debe ser un número entero), se usa la fórmula:
+
+'''
+mensaje_cifrado = (mensaje × c₁) mod m
+'''
+
+---
+
+### 3. Descifrado del Mensaje
+
+Para recuperar el mensaje original, se utiliza:
+
+'''
+mensaje_descifrado = (mensaje_cifrado × c₂) mod m
+'''
+
+Dado que `c₂` es el inverso modular de `c₁`, esta operación revierte el cifrado.
+
+---
+
+### 4. Ejemplo
+
+Supongamos que:
+
+- Mensaje original: `12345`
+- Claves generadas:
+  - `m = 179265841`
+  - `c₁ = 78965432`
+  - `c₂ = 10438745`
+
+#### Cifrado:
+
+'''
+mensaje_cifrado = (12345 × 78965432) mod 179265841
+= 146372913
+'''
+
+#### Descifrado:
+
+'''
+mensaje_descifrado = (146372913 × 10438745) mod 179265841
+= 12345
+'''
 
 
