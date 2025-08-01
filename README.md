@@ -272,4 +272,32 @@ Además, este es un método modular, lo que permite personalizar los caracteres 
 
 Es importante que el Garbell (criba de números primos) encuentre un número primo para cada carácter. Por ello, si se agregan muchos caracteres, es necesario aumentar el valor de `MaxNumeroPrimoPos`.
 
+### Opciones del archivo
+
+El archivo proporciona 4 opciones:
+
+#### 0 - Encriptar y generar clave  
+Encripta un mensaje y genera automáticamente los valores necesarios para desencriptarlo:  
+- **Clave de encriptación**  
+- **Valor modular**  
+Estos valores deben guardarse cuidadosamente y compartirse solo con las personas autorizadas a desencriptar el mensaje.
+
+#### 1 - Encriptar  
+Permite encriptar un mensaje proporcionando manualmente:  
+- La **clave de encriptación**  
+- El **valor modular**
+
+#### 2 - Generar claves  
+Genera los valores necesarios para encriptar y desencriptar mensajes:  
+- **Clave de encriptación**  
+- **Clave de desencriptación**  
+- **Valor modular**  
+Estos datos son esenciales para la comunicación segura y solo deben ser conocidos por las partes involucradas.
+
+#### 3 - Desencriptar  
+Desencripta un mensaje proporcionando:  
+- El **mensaje encriptado**  
+- La **clave de desencriptación**  
+- El **valor modular**  
+Devuelve el mensaje original en texto claro.
 
