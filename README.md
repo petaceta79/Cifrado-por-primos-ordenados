@@ -67,7 +67,7 @@ Código:
 Primos: `[83, 7, 23, 5, 5]`  
 Vector ordenado: `[5, 7, 23, 83]`
 
-2. Para cada número primo del mensaje original, registra su posición (índice) en el vector ordenado, sumando 1 para empezar desde 1.
+2. Para cada número primo del mensaje original, registra su posición (índice) en el vector ordenado, sumando 1 para empezar desde 2.
 
 **Ejemplo**:
 
