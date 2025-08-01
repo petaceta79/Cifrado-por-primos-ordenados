@@ -88,7 +88,7 @@ vector<int> ordenarIeliminarRepe(vector<int> Numeros) {
     for (int i = 1; i < n; ++i) {
         int aux = Numeros[i];
         int e = i;
-        while (e > 0 and Numeros[e - 1] > aux) {
+        while (e > 0 && Numeros[e - 1] > aux) {
             Numeros[e] = Numeros[e - 1];
             --e;
         }
@@ -110,7 +110,7 @@ int posicion(vector<int> &Primos, int num) {
     int right = Primos.size() - 1;
     
     int result = -1;
-    while (result == -1 and left <= right) {
+    while (result == -1 && left <= right) {
         int mid = (right + left) / 2;
         if (Primos[mid] < num) left = mid + 1;
         else if (Primos[mid] > num) right = mid - 1;
@@ -238,7 +238,7 @@ void desfusionarCodeKey(string &code, string &key, string &Resultado) {
     key = "";
     
     int i = 0;
-    while (i < n and Resultado[i] != '-') {
+    while (i < n && Resultado[i] != '-') {
         code += Resultado[i];
         ++i;
     }++i;
@@ -281,7 +281,7 @@ string cifradoPrimosOrden(vector<Letra> &Letras, int NumBloques, string &Word) {
     int n = Word.length();
     int i = 0;
     while (i < n) {
-        if (i % NumBloques == 0 and i != 0) {
+        if (i % NumBloques == 0 && i != 0) {
             annadeResult(resultadoCode, resultadoKey, bloque, Letras);
             bloque = string(NumBloques, ' ');
         }
@@ -315,74 +315,3 @@ string DescifradoPrimosOrden(vector<Letra> &Letras, int NumBloques, string &Code
     return result;
 }
 
-
-// Codigo Principal
-int main()
-{
-    // Codigo final
-    vector<Letra> Letras = LetrasIprimos(); // Letras
-    
-    cout << "Escoge:" << endl;
-    cout << "Encriptar: 0    Desencriptar: 1" << endl;
-    int select; cin >> select;
-    if (select == 0) {
-        string word;
-        cout << "Palabra a encriptar: " << endl;
-        cin.ignore();
-        getline(cin, word);
-        string cifrado = cifradoPrimosOrden(Letras, 4, word);
-        cout << cifrado << endl;
-    }
-    else if (select == 1) {
-        string codigo;
-        cout << "Palabra a encriptar: " << endl;
-        cin.ignore();
-        getline(cin, codigo);
-        string word = DescifradoPrimosOrden(Letras, 4, codigo);
-        cout << word << endl;
-    }
-    
-    cout << endl;
-    
-
-    // Prueba encriptar y desencriptar 
-    /*
-    vector<Letra> Letras = LetrasIprimos(); // Letras
-    string word = "hola que tal todo bien siuuuu";
-    
-    cout << "Palabra: " << word << endl;
-    cout << "Cifrado: " << endl;
-    string cifrado = cifradoPrimosOrden(Letras, 4, word);
-    cout << cifrado << endl;
-        
-    cout << "Descifrado: " << endl;
-    string descifrado = DescifradoPrimosOrden(Letras, 4, cifrado);
-    cout << descifrado << endl;
-        
-    cout << endl; cout << endl;
-    */
-    
-    
-    // Prueba codigo interior 
-    /*
-    vector<Letra> Letras = LetrasIprimos(); // Letras
-    
-    // informacion
-    int code, key;
-    string word = "holaa";
-    cout << word << endl;
-    
-    // Cifrado
-    stringToInt(word, code, key, Letras);
-    
-    cout << code << ' ' << key << endl;
-    
-    // Descifrado
-    cout << "---Decode:" << endl;
-    
-    word = "";
-    IntToString(word, code, key, Letras);
-    cout << word << endl;
-    */
-    
-}
