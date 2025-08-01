@@ -263,3 +263,11 @@ el sol se esconde tras las montaas doradas la brisa suave lleva cantos de aves y
 **Valor modular:** 222477603
 
 ## Conclusión
+
+Con los tres archivos puedes compilar `Encriptacion_final.cc`, y al ejecutarlo podrás cifrar y descifrar mensajes con este método.
+
+Además, este es un método modular, lo que permite personalizar los caracteres utilizados. Estos caracteres pueden modificarse en `CodificarYDescodificar.cc`, dentro de la función `LetrasIprimos`. Se usarán los caracteres definidos en el vector `caracteres`.
+
+Es importante que el Garbell (criba de números primos) encuentre un número primo para cada carácter. Por ello, si se agregan muchos caracteres, es necesario aumentar el valor de `MaxNumeroPrimoPos`.
+
+
