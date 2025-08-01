@@ -1,5 +1,11 @@
 # Cifrado-por-primos-ordenados
 
+## Índice
+
+- [Cifrado de Mensajes con Números Primos y Coordenadas](#cifrado-de-mensajes-con-números-primos-y-coordenadas-fragmentos-cortos)
+- [Cifrado con Números Coprimos e Inverso Modular](#cifrado-con-números-coprimos-e-inverso-modular-criptografía-básica)
+- [Fusión de los Dos Métodos](#fusión-de-los-dos-métodos)
+
 ## Cifrado de Mensajes con Números Primos y Coordenadas (Fragmentos Cortos)
 
 ### 1. Asignación de Valores Primos a los Caracteres
