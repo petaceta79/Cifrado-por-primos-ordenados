@@ -232,4 +232,4 @@ mensaje_descifrado = (146372913 × 10438745) mod 179265841
 = 12345
 ```
 
-
+## Fusión de los Dos Métodos
