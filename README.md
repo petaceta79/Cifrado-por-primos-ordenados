@@ -235,10 +235,12 @@ mensaje_descifrado = (146372913 × 10438745) mod 179265841
 
 ## Fusión de los Dos Métodos
 
-El objetivo es mejorar la seguridad aplicando el cifrado por congruencias a la clave más vulnerable del primer cifrado, dificultando aún más la comprensión ajena del mismo y el cálculo de la solución.
+El objetivo es mejorar la seguridad aplicando el cifrado por congruencias a la parte más vulnerable del primer cifrado, dificultando aún más su comprensión y el cálculo de la solución.
 
-### Funcinoamiento 
-Aplica el primer cifrado con numeros primos, pero cifra con congruencias cada numero que indica la posicion de las letras. Necesitando poseer el mensaje cifrado, la clave y el numero modular.
+### Funcionamiento
+
+Primero se aplica el cifrado con números primos, pero luego se cifra, mediante congruencias, cada número que indica la posición de las letras.  
+Para descifrar correctamente, se requiere tener el mensaje cifrado, la clave y el valor modular.
 
 #### Ejemplos
 
