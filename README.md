@@ -273,6 +273,8 @@ Además, este es un método modular, lo que permite personalizar los caracteres 
 
 Es importante que el Garbell (criba de números primos) encuentre un número primo para cada carácter. Por ello, si se agregan muchos caracteres, es necesario aumentar el valor de `MaxNumeroPrimoPos`.
 
+El exe ejecuta lo mismo.
+
 ### Opciones del archivo
 
 El archivo proporciona 4 opciones:
