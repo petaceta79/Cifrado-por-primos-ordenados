@@ -146,8 +146,6 @@ De esta forma, puedes encriptar y desencriptar con una función que requiere el 
 
 El texto `"hola que tal"`, encriptado queda así: 66815_17466_8510_-15131412_12151413_12151314_
 
-## Cifrado de numero con congruencias 
-
 ## Cifrado con Números Coprimos e Inverso Modular (Criptografía Básica)
 
 Este sistema de cifrado se basa en propiedades de la aritmética modular, especialmente en el uso de **números coprimos** e **inversos modulares**. Es simple pero ilustrativo de algunos fundamentos de la criptografía moderna.
